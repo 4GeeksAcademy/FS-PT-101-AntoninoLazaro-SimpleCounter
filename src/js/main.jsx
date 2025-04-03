@@ -19,7 +19,7 @@ setInterval(() => {
   counter++;
   app.render(
     <React.StrictMode>
-      <Home valor={counter} />
+      <Home value={counter} />
     </React.StrictMode>,
   )
 }, 1000);
