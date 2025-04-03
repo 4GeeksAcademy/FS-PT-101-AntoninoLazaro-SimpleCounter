@@ -8,14 +8,12 @@ const Home = (prompts) => {
 	const tercerDigito = (Math.floor(prompts.value/100)%10);
 	const cuartoDigito = (Math.floor(prompts.value/1000)%10);
 	const quintoDigito = (Math.floor(prompts.value/10000)%10);
-	const sextoDigito = (Math.floor(prompts.value/100000)%10);
 
 
 	return (
 		<div className="container">
-			<div className="row text-center justify-content-center bg-dark rounded mt-3 justify-content-around">
+			<div className="row text-center justify-content-center bg-dark rounded mt-3 justify-content-around m-2">
 					<Clock value={<i className="fa fa-clock"></i>} />
-					<Clock value = {sextoDigito}/>
 					<Clock value = {quintoDigito}/>
 					<Clock value = {cuartoDigito}/>
 					<Clock value = {tercerDigito}/>
