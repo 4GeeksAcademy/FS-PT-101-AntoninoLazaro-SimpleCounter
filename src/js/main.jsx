@@ -9,17 +9,12 @@ import "bootstrap"
 import '../styles/index.css'
 
 // components
-import Home from './components/Home.jsx';
+import {Home} from './components/Home.jsx';
 
 
-const app = ReactDOM.createRoot(document.getElementById('root'))
-
-let counter = 0;
-setInterval(() => {
-  counter++;
-  app.render(
-    <React.StrictMode>
-      <Home value={counter} />
-    </React.StrictMode>,
-  )
-}, 1000);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Home />
+  </React.StrictMode>
+);
